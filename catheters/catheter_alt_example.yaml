@@ -1,0 +1,28 @@
+# Example alternate catheter profile for --catheter
+
+name: alt_example_catheter
+
+shaft:
+  length: 980.0
+  radius: 0.60
+  young_modulus: 7000.0
+  nb_beams: 220
+  nb_edges_collis: 220
+  nb_edges_visu: 180
+
+tip:
+  radius: 0.30
+  young_modulus: 2200.0
+  nb_beams: 10
+  nb_edges_collis: 10
+  nb_edges_visu: 14
+  shape: semicircle
+  hook_radius_scale: 1.8
+  length: auto
+
+material:
+  poisson_ratio: 0.49
+  mass_density: 1.0e-6
+
+collision:
+  radius: 0.60

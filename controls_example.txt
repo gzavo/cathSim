@@ -1,0 +1,13 @@
+# Example push-pull-rotate deployment sequence
+# Format:
+#   <time_s> <action> [repeat]
+# Supported actions:
+#   PUSH | PULL | ROTATE_LEFT | ROTATE_RIGHT
+#
+# This script performs a visibly longer deployment:
+# push in, rotate to steer the hook, push deeper, then partial pullback.
+0.10 PUSH 60
+0.80 ROTATE_RIGHT 20
+1.20 PUSH 40
+1.90 ROTATE_LEFT 12
+2.20 PULL 30
